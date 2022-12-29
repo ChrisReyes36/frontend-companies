@@ -1,0 +1,42 @@
+$theme-colors: (
+  "primary": #2c3e50,
+  "secondary": #1d6042,
+  "success": #198754,
+  "info": #0dcaf0,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #f8f9fa,
+  "dark": #343a40,
+);
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+.pointer {
+  cursor: pointer;
+}
+
+.fadeIn {
+  animation: fadeInAnimation 1s linear 1 forwards;
+}
+
+.fadeOut {
+  animation: fadeOutAnimation 1s linear 1 forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
